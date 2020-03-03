@@ -1,1 +1,15 @@
-*/node_modules/*
+.idea
+.idea_modules
+.classpath
+.project
+.vscode
+.bloop
+.metals
+target
+dist
+build
+node_modules
+*.iml
+*package-lock.json
+coverage
+nohup.out
