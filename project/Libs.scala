@@ -11,13 +11,5 @@ object Libs {
 object Akka {
   val `akka-http` = "com.typesafe.akka" %% "akka-http"   % "10.1.11"
   val `akka-stream` = "com.typesafe.akka" %% "akka-stream" % "2.5.26"
-}
-
-object Borer {
-  private val Version = "1.4.0"
-  private val Org     = "io.bullet"
-
-  val `borer-core`        = dep(Org %%% "borer-core" % Version)
-  val `borer-derivation`  = dep(Org %%% "borer-derivation" % Version)
-  val `borer-compat-akka` = Org %% "borer-compat-akka" % Version
+  val `akka-http-spray-json` = "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.7"
 }

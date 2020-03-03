@@ -7,9 +7,7 @@ lazy val `sample-server` = project
       Libs.`scalatest`.value,
       Akka.`akka-http`,
       Akka.`akka-stream`,
-      Borer.`borer-compat-akka`,
-      Borer.`borer-core`,
-      Borer.`borer-derivation`
+      Akka.`akka-http-spray-json`
     )
   )
 
