@@ -1,4 +1,17 @@
 import * as React from 'react'
+import styled from 'styled-components'
+
+let Table = styled.table`
+    border-collapse: collapse;
+    color: green;
+`
+
+let Th = styled.th`
+   border: 1px solid;
+   :hover {
+    color: red;
+    }
+`
 
 interface TMTTableProps {
     rows: number,
@@ -6,7 +19,7 @@ interface TMTTableProps {
     headers: string[]
 }
 
-export default class TMTTable extends React.Component<TMTTableProps, any> {
+export default class StyledTMTTable extends React.Component<TMTTableProps, any> {
     validHeaders: string[];
 
     constructor(props: TMTTableProps) {
@@ -16,13 +29,13 @@ export default class TMTTable extends React.Component<TMTTableProps, any> {
 
     render() {
         return (
-            <table>
+            <Table color={"green"}>
                 <tr>
                     {this.validHeaders.map(header =>
-                        <th>{header}</th>
+                        <Th>{header}</Th>
                     )}
                 </tr>
-            </table>
+            </Table>
         )
     }
 }
