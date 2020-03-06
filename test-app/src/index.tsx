@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import TMTTable from "./components/TMTTable";
+import HelloWorld from "./HelloWorld";
+
 
 ReactDOM.render(
-    <TMTTable rows={7} columns={5} headers={["subsystem", "state", "health", "activity", "heartbeat"]}/>,
+    <HelloWorld name={"TMT"}/>,
     document.getElementById('root')
 );
