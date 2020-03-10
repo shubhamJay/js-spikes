@@ -5,6 +5,8 @@ import {ACTIVITY, HEALTH, STATE, SUBSYSTEMS} from "../constants/constants";
 export const Subsystems = () => {
     return (
         <TMTTable
+            className={"highlight"}
+            tableName={"Subsystems"}
             columns={5}
             rows={5}
             headers={["Subsystem", "State", "Health", "Activity", "Heartbeat"]}
